@@ -66,7 +66,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "deezer-platform:build"
+            "browserTarget": "deezer-platform:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "deezer-platform"
+    }
+  },
+  "defaultProject": "deezer-platform",
+  "cli": {
+    "analytics": "6b33cd06-c504-47cb-95ba-eaa2b5be084a"
+  }
 }

@@ -1,0 +1,73 @@
+/* ----------------------------- */
+/* ----------------------------- */
+/* -------    Colors    -------- */
+/* ----------------------------- */
+/* ----------------------------- */
+
+// Generate tones based on colors
+@function tones($color) {
+    $tones: (
+        0 : 98,
+        100 : 95,
+        200 : 90,
+        300: 85,
+        400: 80,
+        500: map-get($color, l),
+        600: 40,
+        700: 35,
+        800: 30,
+        900: 25,
+        1000: 10
+    );
+
+    @return $tones;
+}
+
+// Main color palette
+$palette: (
+    oxygen: (
+        h: 205,
+        s: 77,
+        l: 60
+    ),
+    carbon: (
+        h: 26,
+        s: 96,
+        l: 70
+    ),
+    hydrogen: (
+        h: 229,
+        s: 61,
+        l: 50
+    ),
+    nitrogen: (
+        h: 348,
+        s: 83,
+        l: 60
+    ),
+    neutral: (
+        h: 202,
+        s: 10,
+        l: 51
+    )
+) !default;
+
+
+// States color palette
+$states : (
+    success: (
+        h: 167,
+        s: 65,
+        l: 50
+    ),
+    warning: (
+        h: 40,
+        s: 100,
+        l: 50
+    ),
+    danger: (
+        h: 5,
+        s: 83,
+        l: 50
+    )
+) !default;

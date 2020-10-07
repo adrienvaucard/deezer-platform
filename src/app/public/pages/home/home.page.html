@@ -1,0 +1,20 @@
+<div class="main-wrapper">
+    <div id="main">
+        <h1>Deezer Platform</h1>
+        <div class="search-input">
+            <input type="text" id="searchBar" placeholder="Search">
+            <button id="search">SEARCH</button>
+        </div>
+        <div class="search-results">
+            <div *ngFor="let result of results" class="search-result">
+                <img src="{{result.album.cover}}" alt="album cover" class="result-cover">
+                <div class="result-content">
+                    <p>{{result.title}}</p>
+                    <p>{{result.artist.name}} - {{result.album.title}}</p>
+                </div>
+                <p class="result-duration">{{result.duration}}s</p>
+            </div>
+        </div>
+    </div>
+    <div id="sidebar">SIDE</div>
+</div>

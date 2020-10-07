@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'styles/theming';
+@use 'styles/functions';
+@use 'styles/variables';
+@use 'styles/mixins';
+@use 'styles/templating';
+@use 'styles/paging';
+
+@forward 'styles/theming';
+@forward 'styles/functions';
+@forward 'styles/variables';
+@forward 'styles/mixins';
+@forward 'styles/templating';
+@forward 'styles/paging';
+
+#wpadminbar {
+    display: none;
+}
+
+html, body {
+    background-color: #FFFFFF;
+	font-family: Roboto;
+    text-align: left;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+
+
